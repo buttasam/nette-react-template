@@ -1,0 +1,5 @@
+#configuration of database using docker compose
+database:
+	dsn: 'mysql:host=nette_react_template_mysql;dbname=nette-react-template'
+	user: root
+	password: root

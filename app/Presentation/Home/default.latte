@@ -1,0 +1,18 @@
+{* This is the welcome page, you can delete it *}
+
+{block content}
+
+    <div class="flex min-h-screen flex-col items-center justify-center p-4">
+      <h1 class="text-4xl font-extrabold">
+        🎉 <span class=" tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500"> Nette React Tailwind Template!</span>
+      </h1>
+
+  <p class="mt-6 text-gray-600 text-sm text-center max-w-md">
+    This is a simple <strong>notelist</strong> demo built with <strong>React/TypeScript</strong>,
+    connected to an <strong>API (Nette)</strong> and <strong>database (MariaDB)</strong>.  
+  </p>
+
+      <div class="mt-8" data-react-component="like-button"></div>
+    </div>
+
+{asset 'main.tsx'}

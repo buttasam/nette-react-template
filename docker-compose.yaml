@@ -1,0 +1,31 @@
+services:
+  php:
+    build: .
+    container_name: nette_react_template_php
+    working_dir: /web
+    volumes:
+      - .:/web
+    ports:
+      - "8000:8000"
+      - "5173:5173"
+    command: php -S 0.0.0.0:8000 -t www
+    depends_on:
+      - db
+    environment:
+      - NETTE_DEBUG=true
+
+  db:
+    image: mariadb:10.4.34
+    container_name: nette_react_template_mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: nette-react-template
+    ports:
+      - "3307:3306"
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  db_data:

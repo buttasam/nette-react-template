@@ -1,0 +1,7 @@
+/vendor
+/.php-cs-fixer.cache
+/node_modules
+/www/assets/.vite/
+
+.idea/*
+*.DS_Store
