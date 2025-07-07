@@ -48,6 +48,7 @@ docker exec nette_react_template_php npm run build
 ├── assets/           # React, Tailwind CSS, and other styles
 ├── bin/              # scripts for command line
 ├── config/           # configuration
+├── database/         # database seed script
 ├── log/              # logged messages and errors
 ├── temp/             # temporary files, cache
 ├── tests/            # tests
@@ -61,7 +62,7 @@ docker exec nette_react_template_php npm run build
 
 ## Common Commands
 
-### Stop containers:
+### Stop containers
 ```
 docker compose down
 ```
@@ -69,4 +70,16 @@ docker compose down
 ### Format code
 ```
 docker exec nette_react_template_php composer format
+```
+
+### Database access
+```
+docker exec -it nette_react_template_mysql mysql -uroot -proot
+```
+
+or connect via database viewer (disable SSL)
+
+### Remove docker volume with database data
+```
+docker volume rm nette-react-template_db_data
 ```
