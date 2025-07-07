@@ -1,6 +1,6 @@
 # Nette React Template
 
-This project is a starter template using the following technologies:
+This project is a ready-to-use starter template using the following technologies:
 - Nette + Vite
 - React + TypeScript
 - Tailwind CSS v4
@@ -9,34 +9,54 @@ This project is a starter template using the following technologies:
 It includes a Docker Compose setup designed for local development.
 You don’t need to install anything manually — just run a few commands and you’re ready to go.
 
-## Run locally
+## 🚀 Quick start
+
+> __Prerequisites:__ Docker + Docker Compose
 
 ### Using Docker Compose
 
-Run Docker Compose and install dependencies:
-
+1. Start the stack:
 ```
 docker compose up --build -d
-docker exec nette_react_template_php composer install
 ```
-
-Run node dev server
+2. Install PHP dependencies and Node modules
 ```
-docker exec -it nette_react_template_php npm install
+docker exec nette_react_template_php sh -c "composer install && npm install"
+```
+3. Launch the Vite dev server (frontend hot‑reload)
+```
 docker exec -it nette_react_template_php npm run dev
 ```
+
 - hit `q` + `enter` to stop dev server
 
 🎉 Application is running on http://localhost:8000/.
 
-Note:
-- Nette uses the dev server only when debug mode is enabled (no action needed it's default setup)
+> __Note:__ Nette uses the dev server only when debug mode is enabled (no action needed it's default setup)
 
-### Prod build
+### 🏗️ Prod build
 
+Compile JS/CSS assets
 ```
 docker exec nette_react_template_php npm run build
 ```
+
+## Project structure
+
+```
+├── app/              # application (presenters, templates, components)
+├── assets/           # React, Tailwind CSS, and other styles
+├── bin/              # scripts for command line
+├── config/           # configuration
+├── log/              # logged messages and errors
+├── temp/             # temporary files, cache
+├── tests/            # tests
+├── vendor/           # libraries installed by Composer
+└── www/              # public document root (index.php, built assets)
+```
+
+> __Note:__ docker compose up automatically seeds MariaDB on first run using database/init.sql.
+> __Docs:__ See the official Nette directory structure guide for more details.
 
 ## Common Commands
 
