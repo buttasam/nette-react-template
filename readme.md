@@ -56,7 +56,8 @@ docker exec nette_react_template_php npm run build
 ```
 
 > __Note:__ docker compose up automatically seeds MariaDB on first run using database/init.sql.
-> __Docs:__ See the official Nette directory structure guide for more details.
+
+> __Docs:__ See the [official Nette directory structure](https://doc.nette.org/en/application/directory-structure#toc-basic-project-structure) documentation for more details.
 
 ## Common Commands
 
