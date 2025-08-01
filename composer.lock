@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "latte/latte",
-            "version": "v3.0.22",
+            "version": "v3.0.23",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/latte.git",
-                "reference": "4349c21ddd16e40939e71ffead0b44f369e72ec3"
+                "reference": "3198a4e336a2a1e535924af11d9a63fbf1650836"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/latte/zipball/4349c21ddd16e40939e71ffead0b44f369e72ec3",
-                "reference": "4349c21ddd16e40939e71ffead0b44f369e72ec3",
+                "url": "https://api.github.com/repos/nette/latte/zipball/3198a4e336a2a1e535924af11d9a63fbf1650836",
+                "reference": "3198a4e336a2a1e535924af11d9a63fbf1650836",
                 "shasum": ""
             },
             "require": {
@@ -55,7 +55,7 @@
             },
             "autoload": {
                 "psr-4": {
-                    "Latte\\": "src"
+                    "Latte\\": "src/Latte"
                 },
                 "classmap": [
                     "src/"
@@ -91,9 +91,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/latte/issues",
-                "source": "https://github.com/nette/latte/tree/v3.0.22"
+                "source": "https://github.com/nette/latte/tree/v3.0.23"
             },
-            "time": "2025-06-24T15:43:35+00:00"
+            "time": "2025-07-17T01:01:46+00:00"
         },
         {
             "name": "nette/application",
@@ -4209,12 +4209,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">= 8.1"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
