@@ -629,16 +629,16 @@
         },
         {
             "name": "nette/forms",
-            "version": "v3.2.6",
+            "version": "v3.2.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/forms.git",
-                "reference": "de4ba5ad4635ceb9aeef248f21f8b821e78d84e0"
+                "reference": "cedc41fe0eff7568f8875d6e4347e95bc4f0cf7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/forms/zipball/de4ba5ad4635ceb9aeef248f21f8b821e78d84e0",
-                "reference": "de4ba5ad4635ceb9aeef248f21f8b821e78d84e0",
+                "url": "https://api.github.com/repos/nette/forms/zipball/cedc41fe0eff7568f8875d6e4347e95bc4f0cf7a",
+                "reference": "cedc41fe0eff7568f8875d6e4347e95bc4f0cf7a",
                 "shasum": ""
             },
             "require": {
@@ -648,14 +648,14 @@
                 "php": "8.1 - 8.4"
             },
             "conflict": {
-                "latte/latte": ">=3.0.0 <3.0.12 || >=3.1"
+                "latte/latte": ">=3.0.0 <3.0.12 || >=3.2"
             },
             "require-dev": {
                 "latte/latte": "^2.10.2 || ^3.0.12",
                 "nette/application": "^3.0",
                 "nette/di": "^3.0",
                 "nette/tester": "^2.5.2",
-                "phpstan/phpstan-nette": "^1",
+                "phpstan/phpstan-nette": "^2.0@stable",
                 "tracy/tracy": "^2.9"
             },
             "suggest": {
@@ -668,6 +668,9 @@
                 }
             },
             "autoload": {
+                "psr-4": {
+                    "Nette\\": "src"
+                },
                 "classmap": [
                     "src/"
                 ]
@@ -700,9 +703,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/forms/issues",
-                "source": "https://github.com/nette/forms/tree/v3.2.6"
+                "source": "https://github.com/nette/forms/tree/v3.2.7"
             },
-            "time": "2025-03-31T01:06:54+00:00"
+            "time": "2025-07-17T22:54:05+00:00"
         },
         {
             "name": "nette/http",
@@ -4209,12 +4212,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">= 8.1"
     },
-    "platform-dev": [],
-    "plugin-api-version": "2.3.0"
+    "platform-dev": {},
+    "plugin-api-version": "2.6.0"
 }
